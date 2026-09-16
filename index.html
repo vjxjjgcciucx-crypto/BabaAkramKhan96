@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baba Akram Khan Bengali - Expert Astrology Guidance</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Rozha+One&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-color: #0b0213;
+            --primary-gold: #f4c05b;
+            --light-gold: #ffdf91;
+            --text-light: #e0e0e0;
+            --whatsapp-green: #25D366;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            background-image: radial-gradient(circle at 50% 0%, #2a0b4d 0%, #0b0213 60%);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* --- Animations --- */
+        @keyframes float-bounce {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-12px) scale(1.03); }
+        }
+
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        @keyframes spin-slow {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes float-bg {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-30px) rotate(5deg); }
+        }
+
+        /* --- Header --- */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 20px;
+            gap: 15px;
+            background: rgba(11, 2, 19, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--glass-border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid var(--primary-gold);
+            object-fit: cover;
+        }
+
+        .brand-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-gold);
+            letter-spacing: 1px;
+            font-family: 'Rozha One', serif;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+        }
+
+        .trust-badge {
+            display: inline-block;
+            border: 1px solid var(--primary-gold);
+            padding: 8px 20px;
+            border-radius: 30px;
+            color: var(--light-gold);
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            background: rgba(244, 192, 91, 0.1);
+        }
+
+        .trust-badge i {
+            color: var(--primary-gold);
+            margin-right: 5px;
+        }
+
+        .main-heading {
+            font-size: 2.8rem;
+            color: #ffffff;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            font-family: 'Rozha One', serif;
+        }
+
+        .sub-heading {
+            font-size: 1.1rem;
+            color: #d1c4e9;
+            max-width: 700px;
+            margin: 0 auto 35px auto;
+            font-weight: 300;
+        }
+
+        /* --- Glowing Animated Button --- */
+        .cta-container {
+            margin: 30px 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border: 2px solid #fff;
+            animation: float-bounce 2.5s infinite ease-in-out, pulse-glow 2s infinite;
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s;
+            max-width: 90%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .whatsapp-btn::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255,255,255,0.2);
+            transform: rotate(45deg);
+            animation: btn-shine 3s infinite;
+        }
+
+        @keyframes btn-shine {
+            0% { left: -100%; }
+            20% { left: 100%; }
+            100% { left: 100%; }
+        }
+
+        .whatsapp-btn i {
+            font-size: 2rem;
+            margin-right: 15px;
+        }
+
+        .btn-text {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            line-height: 1.2;
+        }
+
+        .btn-text span:first-child {
+            font-size: 1.3rem;
+        }
+
+        .btn-text span:last-child {
+            font-size: 0.85rem;
+            font-weight: 400;
+        }
+
+        .btn-badge {
+            background: white;
+            color: #128C7E;
+            font-size: 0.7rem;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin-left: 15px;
+            font-weight: 800;
+        }
+
+        /* --- Highlights --- */
+        .highlights {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: var(--primary-gold);
+        }
+
+        .highlights span {
+            display: flex;
+            align-items: center;
+        }
+
+        .highlights span::before {
+            content: '•';
+            color: var(--whatsapp-green);
+            margin-right: 8px;
+            font-size: 1.5rem;
+        }
+
+        /* --- Chakra Animation Section --- */
+        .chakra-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin: 40px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .chakra-bg {
+            width: 80%;
+            opacity: 0.6;
+            animation: spin-slow 25s linear infinite;
+            filter: drop-shadow(0 0 20px var(--primary-gold));
+        }
+
+        .chakra-text {
+            position: absolute;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-shadow: 0 0 10px rgba(0,0,0,0.8);
+            z-index: 2;
+            background: rgba(0,0,0,0.4);
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 1px solid var(--primary-gold);
+            backdrop-filter: blur(5px);
+        }
+
+        /* --- Services Section --- */
+        .services-section {
+            padding: 50px 20px;
+            position: relative;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            color: var(--primary-gold);
+            margin-bottom: 40px;
+            font-family: 'Rozha One', serif;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-gold);
+            box-shadow: 0 10px 30px rgba(244, 192, 91, 0.1);
+        }
+
+        .service-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary-gold);
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .service-card p {
+            font-size: 0.9rem;
+            color: #bbb;
+        }
+
+        /* --- Contact / Footer --- */
+        .contact-info {
+            background: linear-gradient(0deg, #000000 0%, #150529 100%);
+            padding: 50px 20px;
+            text-align: center;
+            border-top: 1px solid var(--glass-border);
+        }
+
+        .contact-details {
+            margin-bottom: 30px;
+        }
+
+        .contact-details p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+            color: var(--light-gold);
+        }
+
+        .contact-details i {
+            margin-right: 10px;
+            color: var(--primary-gold);
+        }
+
+        /* Privacy Policy & FB Disclaimer */
+        .disclaimer {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 0.75rem;
+            color: #666;
+            text-align: justify;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            line-height: 1.5;
+        }
+
+        .disclaimer strong {
+            color: #888;
+        }
+
+        /* Floating WhatsApp Button for bottom right */
+        .floating-wa {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+            animation: pulse-glow 2s infinite;
+        }
+
+        @media (max-width: 768px) {
+            .main-heading { font-size: 2.2rem; }
+            .whatsapp-btn { padding: 12px 20px; }
+            .btn-text span:first-child { font-size: 1.1rem; }
+            .chakra-bg { width: 95%; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="https://img.sanishtech.com/u/5addf756a68858f29fd406e3cdbe9c71.jpg" alt="Logo" class="logo">
+        <div class="brand-name">Baba Akram Khan Bengali</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="trust-badge">
+            <i class="fa-solid fa-om"></i> TRUSTED PERSONAL ASTROLOGY GUIDANCE
+        </div>
+        
+        <h1 class="main-heading">Jeevan Ki Pareshaniyon Ka<br>Sahi Margdarshan</h1>
+        
+        <p class="sub-heading">
+            Love, marriage, relationship, career, business, kundli aur personal life se judi chintaon ke liye Samrat se confidential guidance paayein.
+        </p>
+
+        <!-- Main Animated CTA -->
+        <div class="cta-container">
+            <a href="https://wa.me/919592445273?text=Hello%20Baba%20Ji,%20mujhe%20guidance%20chahiye" class="whatsapp-btn">
+                <i class="fab fa-whatsapp"></i>
+                <div class="btn-text">
+                    <span>WhatsApp Par Sampark Karein</span>
+                    <span>Abhi Message karein - 9592445273</span>
+                </div>
+                <div class="btn-badge">NOW</div>
+            </a>
+        </div>
+
+        <div class="highlights">
+            <span>Private Consultation</span>
+            <span>Personal Guidance</span>
+            <span>Quick Response</span>
+        </div>
+    </section>
+
+    <!-- Animated Chakra Section -->
+    <section class="chakra-container">
+        <!-- SVG Zodiac/Chakra Wheel spinning -->
+        <svg class="chakra-bg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="48" fill="none" stroke="#f4c05b" stroke-width="0.5" stroke-dasharray="2,2"/>
+            <circle cx="50" cy="50" r="40" fill="none" stroke="#f4c05b" stroke-width="1"/>
+            <circle cx="50" cy="50" r="30" fill="none" stroke="#f4c05b" stroke-width="0.5"/>
+            <!-- Astrological Lines -->
+            <line x1="10" y1="50" x2="90" y2="50" stroke="#f4c05b" stroke-width="0.5"/>
+            <line x1="50" y1="10" x2="50" y2="90" stroke="#f4c05b" stroke-width="0.5"/>
+            <line x1="22" y1="22" x2="78" y2="78" stroke="#f4c05b" stroke-width="0.5"/>
+            <line x1="22" y1="78" x2="78" y2="22" stroke="#f4c05b" stroke-width="0.5"/>
+            <!-- Decorative Dots -->
+            <circle cx="50" cy="10" r="1.5" fill="#f4c05b"/>
+            <circle cx="50" cy="90" r="1.5" fill="#f4c05b"/>
+            <circle cx="10" cy="50" r="1.5" fill="#f4c05b"/>
+            <circle cx="90" cy="50" r="1.5" fill="#f4c05b"/>
+            <path d="M 50 10 A 40 40 0 0 1 90 50" fill="none" stroke="#f4c05b" stroke-width="2"/>
+            <path d="M 50 90 A 40 40 0 0 1 10 50" fill="none" stroke="#f4c05b" stroke-width="2"/>
+        </svg>
+        <div class="chakra-text">100% Privacy <br>& Solutions</div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <h2 class="section-title">Hamari Visesh Sevayen</h2>
+        <div class="services-grid">
+            
+            <!-- Service 1 with Image -->
+            <div class="service-card">
+                <img src="https://img.sanishtech.com/u/02db15b2db3873f84a53ffc9f2c28cae.jpg" alt="Love Problem Solution" class="service-img">
+                <h3>Love Problem Solution</h3>
+                <p>Apne khoye hue pyar ko wapas payein aur apne relationship ki sabhi duriyan khatam karein.</p>
+            </div>
+
+            <!-- Service 2 with Image -->
+            <div class="service-card">
+                <img src="https://img.sanishtech.com/u/93cf9a11ab9e83a8754a18aa8b3ae04f.jpg" alt="Marriage & Husband Wife Dispute" class="service-img">
+                <h3>Husband-Wife Dispute</h3>
+                <p>Shadi shuda zindagi ke jhagde aur divorce jaisi pareshaniyon ka turant aur gopniye samadhan.</p>
+            </div>
+
+            <!-- Service 3 Icon based -->
+            <div class="service-card">
+                <i class="fa-solid fa-briefcase service-icon"></i>
+                <h3>Career & Business</h3>
+                <p>Naukri me rukaawat, business me nuksan ya career growth me aane wali badhaon ko dur karein.</p>
+            </div>
+
+            <!-- Service 4 Icon based -->
+            <div class="service-card">
+                <i class="fa-solid fa-hands-holding-child service-icon"></i>
+                <h3>Family Problem</h3>
+                <p>Grah kalesh, property vivad aur pariwarik shanti ke liye vishesh jyotish upay.</p>
+            </div>
+
+            <!-- Service 5 Icon based -->
+            <div class="service-card">
+                <i class="fa-solid fa-ring service-icon"></i>
+                <h3>Intercaste Marriage</h3>
+                <p>Prem vivah me aane wali rukawat aur mata-pita ko manane ke liye achook margdarshan.</p>
+            </div>
+
+            <!-- Service 6 Icon based -->
+            <div class="service-card">
+                <i class="fa-solid fa-star-and-crescent service-icon"></i>
+                <h3>Kundli Dosh Nivaran</h3>
+                <p>Manglik dosh, Kaal Sarp dosh aur anya grah doshon ka shastriya vidhi se nivaran.</p>
+            </div>
+
+        </div>
+
+        <!-- Secondary CTA -->
+        <div class="cta-container" style="text-align: center; margin-top: 50px;">
+            <a href="https://wa.me/919592445273?text=Hello%20Baba%20Ji,%20I%20need%20help" class="whatsapp-btn">
+                <i class="fab fa-whatsapp"></i>
+                <div class="btn-text">
+                    <span>WhatsApp Par Sampark Karein</span>
+                    <span>100% Guaranteed Privacy</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer & Contact & Privacy Policy Disclaimer -->
+    <footer class="contact-info">
+        <img src="https://img.sanishtech.com/u/5addf756a68858f29fd406e3cdbe9c71.jpg" alt="Logo" class="logo" style="margin-bottom: 20px;">
+        <h2 style="color: var(--primary-gold); margin-bottom: 20px; font-family: 'Rozha One', serif;">Baba Akram Khan Bengali</h2>
+        
+        <div class="contact-details">
+            <p><i class="fa-solid fa-phone"></i> +91 9592445273</p>
+            <p><i class="fa-brands fa-whatsapp"></i> +91 9592445273</p>
+            <p><i class="fa-solid fa-envelope"></i> surajbhargav414@gmail.com</p>
+        </div>
+
+        <div class="disclaimer">
+            <strong>Privacy Policy & Disclaimer:</strong> 
+            This website is created for consultation and guidance purposes based on astrology. Results may vary from person to person. We strictly adhere to privacy policies; your personal details and queries are kept 100% confidential and are not shared with any third party. <br><br>
+            <em>This site is not a part of the Facebook website or Facebook Inc. Additionally, this site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.</em>
+            <br><br>
+            &copy; 2026 Baba Akram Khan Bengali. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919592445273?text=Hello" class="floating-wa" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
